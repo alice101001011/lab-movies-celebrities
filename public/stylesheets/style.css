@@ -6,3 +6,10 @@ body {
 a {
   color: #00b7ff;
 }
+
+.row {
+  gap: 15px;
+}
+
+
+

@@ -1,6 +1,6 @@
 <div class="container">
   <div class="row justify-content-center">
-    <div class="col-md-6">
+    <div class="col-md-9">
       <h2>{{title}}</h2>
       <p>Genre: {{genre}}</p>
       <p>Plot: {{plot}}</p>
@@ -11,8 +11,15 @@
           <p>Catch phraes: {{catchPhrase}}</p>
         {{/each}}
       </p>
-
+      <div class="row">
+      <a href="/movies/{{_id}}/edit" class="btn btn-sm btn-outline-dark">Edit</a>
+      <form action="/movies/{{_id}}/delete" method="post">
+        <button type="submit" class="btn btn-warning">Delete</button>
+      </form>
+      </div>
+      <div class="row">
       <a href="/movies" class="btn btn-sm btn-outline-dark">Go back</a>
+      </div>
     </div>
   </div>
 </div>
